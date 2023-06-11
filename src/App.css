@@ -1,38 +1,98 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+  display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.cc-card {
+  width: 359px;
+  height: 175px;
+  background-color: pink;
+  margin-bottom: 20px;
+  border-radius: 10px
+}
+
+.cc-brand img {
+  width: 70px;
+}
+
+.cc-number {
   color: white;
+  font-size: 2em;
+  font-weight: 600;
 }
 
-.App-link {
-  color: #61dafb;
+.driver-picture {
+  height: 100px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driver-picture-container {
+  width: 100px;
+  height: 100px;
+  clip-path: circle(50%)
+}
+
+.driver-card {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.driver-name {
+  font-weight: 700;
+  color: white
+}
+
+.rating img {
+  width: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px
+}
+
+/* SingleColorPicker.jsx */
+
+.single-input {
+  margin: 17px;
+  margin-left: 10px
+}
+
+.single-box {
+  margin-top: 10px
+}
+
+.rgb-box {
+  margin-top: 10px
+}
+
+.number:nth-child(2n+0) {
+  background-color: red;
+}
+
+.number {
+  width: 120px;
+  height: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 40px
+}
+
+.number-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 80px;
+  margin-bottom: 80px
+}
+
+.number {
+  border: 2px solid black
+}
+
+.form-password:invalid{
+  border: 2px solid red
+}
+
+.form-password:valid {
+  border: 2px solid green
 }
